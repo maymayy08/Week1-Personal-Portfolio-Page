@@ -1,47 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-}
-
-body {
+  margin: 0;
+  padding: 0;
   font-family: 'Courier New', Courier, monospace; 
   font-size: 16px;
+  display: block;  
+  box-sizing: border-box;
 
 } 
-/* Style the side bar for fixed full height */
 
-/* Style the links inside the sidenav */
+title {
+  display: none;
+}
+
+
 #mySidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  right: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: #000; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  position: absolute; 
+  right: -80px; 
+  transition: 0.3s; 
+  padding: 15px;
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: #000; 
+  border-radius: 0 5px 5px 0; 
 }
 
 #mySidenav a:hover {
-  right: 0; /* On mouse-over, make the elements appear as they should */
+  right: 0; 
 }
 
-/* The about link: 20px from the top with a green background */
 #about {
   top: 20px;
   background-color: pink;
+  padding-bottom: 5px;
 }
 
 #projects {
   top: 80px;
-  background-color: darkseagreen; /* Blue */
+  background-color: darkseagreen;
+  padding-bottom: 20px;
 }
 
-#contact {
-  top: 140px;
-  background-color: palevioletred; /* Red */
-}
+#contact { 
+  top: 140px; 
+  background-color: palevioletred;
+  padding-bottom: 20px; 
+  z-index: 1;
+} 
 
 
  h1 {
@@ -56,65 +61,34 @@ h2 {
     font-family: "Gill Sans", sans-serif; 
     line-height: 1.4; 
     text-align: center; 
-    margin-top: 100px; 
+    margin-top: 100px;
 }
 
-.hero-text { 
-   text-align: center;
-   max-width: 80%; 
-   margin-left: 15vh; 
-   /* vertical-align: top;  */
-   width: 100%; 
-} 
-  
 #portrait {
-  display: flex;               /* Corrected to flex */
-  justify-content: center;     /* Center content horizontally */
-  align-items: center;         /* Center content vertically */
-  border-radius: 50%;          /* Make the container round */
-  margin-left: 280px;          /* Adjust the margin as per your layout */
-  height: 230px;               /* Set height of the circular container */
-  width: 200px;                /* Set width of the circular container */
-  overflow: hidden;            /* Ensure any image overflowing the container is hidden */
-}
-
-#portrait img {
-  width: 100%;                 /* Make image take up 100% of the container width */
-  height: 100%;                /* Ensure the image covers the full container height */
-  object-fit: cover;           /* Ensure the image covers the container without distortion */
-}
-
-p {
-  text-align: center;
-}
-#intro { 
     border: 5px solid black;    
     height: 220px;     
-    width: 130px;     
+    width: 160px;     
     padding: 2px;  
     max-width: 100%; 
     margin-left: 10px; 
-    margin-top: 30px;
-}  
+    margin-bottom: 20px;          
+}
 
 .about-text {    
   position: absolute;
+  top: 150px;
   text-align: center;
-  font-size: 1.0rem;
-   max-width: 80%; 
-   margin-left: 110px; 
-   margin-bottom: 20px;
-   top: 450px;
-   padding: 50px;
-   width: 100%;
+  margin-left: 130px; 
+  padding: 71px;
+   
 }
    
-.container { 
+.box-container { 
   display: flex; 
   justify-content: flex-start; 
   align-items: flex-start;  
   width: 800px; 
-  height: 630px; 
+  height: 650px; 
   padding: 0; 
   border: 2px solid #000; 
   margin-left: 20px;  
@@ -125,7 +99,7 @@ p {
 } 
 
 .box1, .box2 { 
-  display: flex; 
+  display: block; 
   flex-direction: column; 
   align-items: stretch; 
   justify-content: space-between; 
@@ -138,7 +112,7 @@ p {
 
 
 .box1 img, .box2 img{ 
-  width: 110%;
+  width: 118%;
   height: 300px; 
   object-fit: cover; 
   padding: 10px; 
@@ -151,6 +125,46 @@ p {
    padding: 10px; 
    text-align: justify; 
  } 
+
+input[type="text"],input[type="email"], textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 20px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: dodgerblue;
+  color:white;
+  padding: 12px 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: green;
+}
+
+.form-container {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-left: 350px;
+  width: 50%;
+}
+
+footer P {
+  text-align: center;
+  font-weight: bold;
+}
+
 
 
 

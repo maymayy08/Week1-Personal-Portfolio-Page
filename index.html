@@ -3,69 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Webpage</title>
+    <title>May's Personal Portfolio Webpage</title>
     <link rel="stylesheet" href="./assets/style/style.css">
-    <!-- load an icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-
+<!-- Header -->
+<header>
 <nav id="mySidenav" class="sidenav">
     <a href="#about" id="about">About &#128100</a>
     <a href="#projects" id="projects">Projects &#128193</a>
     <a href="#contact" id="contact">Contact &#128222</a>
+<div style="margin-left: 80px;"></div>
 </nav>
-<!-- Header -->
-<div style="margin-left: 80px;">
-<header>
-<div class="header-text">
-    <img src="./assets/May.jpg" id="portrait">
     <h1>May Guan</h1>
-    <p>Full Stack Developer</p>
-</div>
-</div>
 </header>
-<!-- Hero Section -->
 <main>
-    <section class="section">
-        <div class="hero">
-            <p class="hero-text">Greetings! I'm May! I'm a passionate full-stack developer with a love for creating intuitive, 
-            user-centered web applications. With learning both front-end and back-end technologies in bootcamp. 
-            I build scalable, performant web solutions that users would love.</p>    
-        </div>
+ <article>
 <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <img src="./assets/pic1.jpeg" id="intro">  
+        <img src="./assets/May.jpg" id="portrait">
         <p class="about-text">
-        Greeting, I'm May, and I'm currently on an exciting journey to fulfill my dream career in becoming a full stack developer through Step8up bootcamp.
+        Greetings! I'm May, and I'm currently on an exciting journey to fulfill my dream career in becoming a full stack developer through Step8up bootcamp.
         <br><br>After having 5 years of IT Support experiences, I decided it now the time to enchance my career path into software development. I am passionate to expand my current skill sets, along with learning how to code in many different lanaguges and the love for problem solving!
         I've always been a keen intrest and wonder how apps and websites work in real life situlation, and for myself I want to learn how to create them myself. Throughout the webpage you are seeing currently, you will be able to find projects that I have been working on and if you are intrested to learn more what I do, please feel free to fill in the contact me form.</p>
     </section>
 <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="container">
+        <div class="box-container">
         <div class="box1">
                 <img src="./assets/Origami.jpeg">
                 <p class="box-1-text"><strong>3D Origami Models</strong>
                 <br>
-                In my spare time, I enjoy making an art of 3D origami. Despitely, the 3D origami is made out of 100s of coloured papers and transforms into complex, multidimensional models. The process involve in folding 100 or 1000 of tiny pieces of paper, each one is carefully crafted and taking care to assembled in order to build intricate shape.
-                In the image above, this is the 3D origami of bird, cats and Piku I have made.</p>
+                In my spare time, I enjoy making an art of 3D origami. Despitely, the 3D origami is made out of 100s of coloured papers and transforms into complex, multidimensional models. The process involves in folding 1000s tiny pieces of paper, each one is carefully crafted and taking care of in order to assembled it together to build intricate shape.
+                The image above outline the 3D origami of bird, cats and Pikachu I have made.</p>
         </div>
         <div class="box2">
             <img src="./assets/puzzle.jpeg">
             <p class="box-2-text"><strong> 3D Lego Puzzle</strong>
             <br>
-            In my space time, I also enjoy building LEGO. It's fun and creative way for me to relax and challenge my own imagination. In this image above, this describle the puzzle is made out of tiny lego pieces in order to assemble together to create a Snoopy photo frame puzzle.</p>
+            In my space time, I also enjoy building LEGO. It's fun and creative way for me to relax and challenge my own imagination. Theimage above shows a puzzle made out of tiny pieces of lego in order to assemble it together to create a Snoopy photo frame puzzle.</p>
         </div>
     </section>
+<!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
+        <br>
+            <div class="form-container">
+                <form action="#" method="post">
+                 
+                  <strong><label for="name">Name</label></strong>
+                  <input type="text" id="name" name="name" required> 
+                  
+                  <br>
+
+                  <strong><label for="email">Email</label></strong>
+                  <input type="email" name="email" required>
+                
+                  <br>
+
+                  <textarea id="message" name="message" placeholder="Enter your message here" style="height:200px" required></textarea>
+                  
+                  <br>
+
+                  <input type="submit" value="Send a message">
+                </form>
+                <br>
+                <p> Alternatively, you can <a href="mailto:mg@example.com">Email Me</a> or
+                <a href="tel:+441234567894">Contact Me</a></p>
+            </div>
     </section>
-
+    </article>
 </main>
-
-
+<footer>
+    <p>Copyright &copy 2025 May Guan</p>
+</footer>
 </body>
 </html>
