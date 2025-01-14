@@ -180,14 +180,14 @@ footer P {
   }
 
   #portrait {
-    width: 112px;
+    width: 115px;
     height: 220px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-bottom: 20px;
   }
 
   .about-text {
-    left: -60px;
+    left: -65px;
     width: 100%;
     font-size: 0.6rem;
     top: 20px;
@@ -211,20 +211,19 @@ footer P {
     height: 150px;
     position: relative;
     right: 280px;
-    top: 355px;
+    top: 360px;
   }
 
   .box1-text {
     width: 200%;
-    margin-left: 2px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   
   .box2-text {
-    width: 300%;
-    right: 270px;
+    width: 200%;
+    right: 280px;
     position: relative;
-    top: 400px;
+    top: 356px;
     font-size: 0.7rem;
 
   }
