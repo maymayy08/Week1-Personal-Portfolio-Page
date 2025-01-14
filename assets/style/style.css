@@ -198,7 +198,7 @@ footer P {
   }
   .box-container {
     width: 370px;
-    padding: 5px;
+    padding: 1px;
   }
 
   .box1 img {
@@ -227,6 +227,11 @@ footer P {
     top: 356px;
     font-size: 0.7rem;
 
+  }
+
+  .form-container {
+    margin-left: 50px;
+    width: 300px;
   }
 }
     
