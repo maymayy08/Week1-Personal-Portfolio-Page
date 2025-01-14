@@ -180,7 +180,7 @@ footer P {
   }
 
   #portrait {
-    width: 115px;
+    width: 118px;
     height: 220px;
     margin-left: 5px;
     margin-bottom: 20px;
@@ -214,12 +214,13 @@ footer P {
     top: 360px;
   }
 
-  .box1-text {
+  .box-1-text {
     width: 200%;
     font-size: 0.7rem;
+    
   }
   
-  .box2-text {
+  .box-2-text {
     width: 200%;
     right: 280px;
     position: relative;
